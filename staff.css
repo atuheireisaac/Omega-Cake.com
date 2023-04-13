@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: url(../IMAGES/download.jpg);
+    background-size: cover;
+    background-position: cover;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+.menu-bar{
+    background:green;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+   
+}
+.menu-bar ul li{
+    width:120px;
+    margin: 15px;
+    padding: 15px;
+   
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+    border-bottom: 1px dotted #fff;
+}
+.active,.menu-bar ul li:hover{
+    background:orangered;
+    border-radius:3px;
+}
+.menu-bar ul li:hover{
+    background:orangered;
+    border-radius:3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 2px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+   margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+    
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+
+}
+.menu-bar h1{
+    background: sienna;
+    position: center;
+    text-align: center;
+} 
+.menu-bar h1 span{
+    color: blue;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space;
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,0,9);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+body{
+    background-color: #f5f5f5;
+}
+.row{
+border: 1px solid orange;
+display: flex;
+flex-wrap: 2rem 1rem;
+text-align: center;
+}
+.column{
+    width: 100%;
+    border: 1px solid black;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.rem;
+    color: #1f003b;
+}
+.card{
+
+    box-shadow: 0 0 2.2rem rgba(25,0,58,0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #ffffff;
+
+    
+}
+.card .img-container{
+    height: 8em;
+    width: 8rem;
+    background-color: #a993ff;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img{
+height: 100%;
+    width: 100%;
+    border-radius :100% ;
+}
+.card h3{
+    font-weight :500 ;
+    color: green;
+}
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.icons{
+    width:50% ;
+    min-width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+}
+.card:hover{
+    background: linear-gradient(#6045ea, #8567f8);
+    color: #ffffff;
+}
+.card:hover .img-container{
+    transform: scale(1.1);
+}
+.btn{
+    border-radius: 2rem solid ;
+    background-color: orange;
+    width:2rem;
+}
